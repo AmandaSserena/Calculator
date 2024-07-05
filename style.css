@@ -1,0 +1,117 @@
+body {
+    /* estilo do body */
+    display: flex;
+    /* display flex para alinhar o conteudo no centro da tela */
+    justify-content: center;
+    /* alinhar o conteudo no centro da tela */
+    align-items: center;
+    /* alinhar o conteudo no centro da tela */
+    height: 100vh;
+    /* altura da tela */
+    background-color: #f0f0f0;
+    /* cor de fundo */
+    font-family: Arial, sans-serif;
+    /* fonte */
+}
+
+h1 {
+    /* estilo do h1 */
+    text-align: center;
+    /* alinhar o texto no centro */
+    margin-bottom: 20px;
+    /* margem inferior */
+}
+
+.calculator {
+    /* estilo do container da calculadora */
+    background-color: white;
+    /* cor de fundo */
+    border-radius: 10px;
+    /* borda arredondada */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* sombra */
+    padding: 20px;
+    /* padding */
+    width: 300px;
+    /* largura */
+}
+
+.display {
+    /* estilo do display */
+    background-color: #222;
+    /* cor de fundo */
+    color: white;
+    /* cor do texto */
+    font-size: 2em;
+    /* tamanho da fonte */
+    padding: 20px;
+    /* padding */
+    text-align: right;
+    /* alinhar o texto a direita */
+    border-radius: 10px;
+    /* borda arredondada */
+    margin-bottom: 20px;
+    /* margem inferior */
+    min-height: 60px;
+    /* altura minima */
+}
+
+.buttons {
+    /* estilo dos botoes */
+    display: grid;
+    /* display grid */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas com o mesmo tamanho */
+    gap: 10px;
+    /* espacamento entre os botoes */
+}
+
+.btn {
+    /* estilo dos botoes */
+    background-color: #f9f9f9;
+    /* cor de fundo */
+    border: none;
+    /* sem borda */
+    border-radius: 5px;
+    /* borda arredondada */
+    padding: 20px;
+    /* padding */
+    font-size: 1.5em;
+    /* tamanho da fonte */
+    cursor: pointer;
+    /* cursor pointer */
+    transition: background-color 0.3s ease;
+    /* transicao de cor */
+}
+
+.btn:hover {
+    /* estilo dos botoes ao passar o mouse */
+    background-color: #e0e0e0;
+    /* cor de fundo */
+}
+
+.operator {
+    /* estilo dos operadores */
+    background-color: #007cf0;
+    /* cor de fundo */
+    color: white;
+    /* cor do texto */
+}
+
+#equals {
+    /* estilo do botao de igual */
+    background-color: #00b894;
+    /* cor de fundo */
+    color: white;
+    /* cor do texto */
+    grid-column: span 2;
+    /* ocupar 2 colunas */
+}
+
+#clear {
+    /* estilo do botao de limpar */
+    background-color: #d63031;
+    /* cor de fundo */
+    color: white;
+    /* cor do texto */
+}
